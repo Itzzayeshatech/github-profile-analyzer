@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>GitHub Profile Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Profile Analyzer</h1>
+    <div class="input-row">
+      <input id="username" type="text" placeholder="Enter GitHub username (e.g. torvalds)" />
+      <button id="analyzeBtn">Analyze</button>
+    </div>
+    <div id="message" class="message"></div>
+    <div id="profile" class="profile hidden">
+      <img id="avatar" src="" alt="avatar" />
+      <h2 id="displayName"></h2>
+      <p id="bio"></p>
+      <div class="stats">
+        <div>Total Repos: <span id="totalRepos"></span></div>
+        <div>Followers: <span id="followers"></span></div>
+        <div>Following: <span id="following"></span></div>
+        <div>Stars: <span id="stars"></span></div>
+        <div>Forks: <span id="forks"></span></div>
+      </div>
+      <canvas id="langChart" width="400" height="300"></canvas>
+      <div id="topRepos"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
